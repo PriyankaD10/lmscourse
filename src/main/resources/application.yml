@@ -1,0 +1,17 @@
+server:
+  port: 9012
+spring:
+  application:
+    name: Course
+  datasource:
+    password: Pass@123
+    url: jdbc:mysql://lmscourse.mysql.database.azure.com:3306/lmsdb?useSSL=true&requireSSL=false
+    #jdbc:mysql://localhost:3306/lmsdb?allowPublicKeyRetrieval=true&useSSL=false
+    username: sauser@lmscourse
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
